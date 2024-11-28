@@ -18,10 +18,11 @@
   "devDependencies": {
     "@playwright/test": "^1.48.2",
     "@types/node": "^22.9.0",
-    "allure-playwright": "^3.0.6"
+    "allure-playwright": "^3.0.6",
+    "typescript": "^5.7.2"
   },
   "dependencies": {
+    "@cucumber/cucumber": "^11.1.0",
     "exceljs": "^4.4.0"
   }
 }
-
