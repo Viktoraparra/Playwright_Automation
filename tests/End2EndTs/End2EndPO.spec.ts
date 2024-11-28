@@ -3,6 +3,8 @@ import {customTest} from '../../utilsTs/test-base'
 import {POManager} from '../../pageObjectsTs/POManager'
 const dataSet = JSON.parse(JSON.stringify(require("../../data/placeorderData.json")));
 
+
+
 for(const data of dataSet)
 {
   test(`@Web Client App - Placing Orders ${data.productName}`, async ({ page }) => {

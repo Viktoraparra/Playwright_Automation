@@ -24,19 +24,19 @@ export class POManager{
         this.cartPage = new CartPage(page);
     }
 
-    getLoginPage(){
+    getLoginPage(page: Page){
         return this.loginPage;
     }
-    getDashboardPage(){
+    getDashboardPage(page: Page){
         return this.dashboardPage;
     }
-    getCartPage(){
+    getCartPage(page: Page){
         return this.cartPage;
     }
-    getOrdersHistoryPage(){
+    getOrdersHistoryPage(page: Page){
         return this.ordersHistoryPage;
     }
-    getOrdersReviewPage(){
+    getOrdersReviewPage(page: Page){
         return this.ordersReviewPage;
     }
 
