@@ -27,7 +27,7 @@ test('@Web Screenshot & Visual Comparation', async ({page}) => {
 // visual Validation of Screenshot for validating UI Testing comparing Screenschots
 // screenshot - store -> screenshot ->
 
-test.only('visual', async ({page}) =>{
+test('visual', async ({page}) =>{
 
     await page.goto('https://flightaware.com/');
     expect(await page.screenshot()).toMatchSnapshot('landing.png')

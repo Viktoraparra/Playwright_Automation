@@ -1,28 +1,31 @@
-class DashboardPage{
+import { test, expect, Page, Locator } from "@playwright/test";
 
-    constructor(page){
+export class DashboardPage{
+
+    page: Page;
+    products: Locator;
+    productsText: Locator;
+    cart: Locator;
+    orders: Locator;
+
+
+    constructor(page:Page){
         this.products = page.locator(".card-body");
         this.productsText = page.locator(".card-body b");
         this.cart = page.locator('[routerlink="/dashboard/cart"]');
         this.orders = page.locator("button[routerlink*='myorders']")
     }
 
-    async searchProductAddToCart(productName){
-      try {
+    async searchProductAddToCart(productName:string){
         const titles = await this.productsText.allTextContents();
         const count = await this.products.count();
       
         for (let i = 0; i < count; i++) {
-          console.log(await this.products.nth(i).locator("b").textContent())
           if ((await this.products.nth(i).locator("b").textContent()) === productName) {
-            await this.products.nth(i).locator("button:has-text('Add To Cart')").click();
+            await this.products.nth(i).locator("text= Add To Cart").click();
             break;
           }
         }
-      } catch (error) {
-        throw `Error: ${error}`
-      }
-        
     }
     async navigateToOrders(){
       await this.orders.click()
@@ -32,5 +35,3 @@ class DashboardPage{
         await this.cart.click()
     }
 }
-
-module.exports = {DashboardPage}
