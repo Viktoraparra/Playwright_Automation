@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","16876","@Web Client App - Placing Orders ADIDAS ORIGINAL","chromium","Mon Nov 25 20:24:26 GMT-03:00 2024","passed","Mon Nov 25 20:24:43 GMT-03:00 2024","","End2End/End2EndPO.spec.js","",""
+"","4552","@Web Handling Calendar","chromium","Mon Nov 25 20:24:26 GMT-03:00 2024","passed","Mon Nov 25 20:24:31 GMT-03:00 2024","","Calendar/Calendar.spec.js","",""
+"","9116","@Web Screenshot & Visual Comparation","chromium","Mon Nov 25 20:24:26 GMT-03:00 2024","passed","Mon Nov 25 20:24:35 GMT-03:00 2024","","MoreValidation/MoreValidation.spec.js","",""
+"","16942","@Web Client App - Placing Orders ZARA COAT 3","chromium","Mon Nov 25 20:24:26 GMT-03:00 2024","passed","Mon Nov 25 20:24:43 GMT-03:00 2024","","End2End/End2EndPO.spec.js","",""

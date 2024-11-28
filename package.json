@@ -1,0 +1,27 @@
+{
+  "name": "playwright_automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "windows": "npx playwright test tests/windowsHandling/ChildWindows.spec.js --headed",
+    "regression": "npx playwright test",
+    "End2End": "npx playwright test tests/End2End/End2End.spec.js",
+    "End2End:tag": "npx playwright test --grep @Web",
+    "End2End:config:project": "npx playwright test tests/End2End/End2EndPO.spec.js --config playwright.config1.js --project=firefox",
+    "api:test": "npx playwright test tests/API/WebAPIPart1.spec.js",
+    "Web:allure": "npx playwright test --grep @Web --reporter=line,allure-playwright"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.48.2",
+    "@types/node": "^22.9.0",
+    "allure-playwright": "^3.0.6"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0"
+  }
+}
+

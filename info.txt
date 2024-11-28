@@ -1,0 +1,58 @@
+Installation
+npm init playwright
+
+
+for running
+
+Inside that directory, you can run several commands:
+
+  npx playwright test
+    Runs the end-to-end tests.
+
+  npx playwright test --ui
+    Starts the interactive UI mode.
+
+  npx playwright test --project=chromium --headed 
+    Starts shows browser and execution  
+
+  npx playwright test --project=chromium
+    Runs the tests only on Desktop Chrome.
+
+  npx playwright test example
+  npx playwright test test/LoginExcercise.spec.js
+    Runs the tests in a specific file.
+
+  npx playwright test --debug
+    Runs the tests in debug mode.
+
+  npx playwright codegen
+    Auto generate tests with Codegen.
+
+We suggest that you begin by typing:
+
+    npx playwright test
+
+
+Tip:
+debugging with VSCode cmd + shift + p 
+select Debug: Debug npm script
+and select script scenario
+Note: go to config file and rise time limit from 30 to 100 
+
+for more debuggin change trace to on and use trace zip file in trace.playwright.dev
+
+
+manage Excel Data needs to use excelJs node module
+- npm i exceljs
+
+Install allure
+ npm install -D allure-playwright
+
+allure report 
+npx playwright test --grep @Web --reporter=line,allure-playwright
+
+Generate Report
+allure generate ./allure-results --clean
+
+open 
+allure open ./allure-report
